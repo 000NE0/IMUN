@@ -23,8 +23,12 @@ app.get('/', (req, res, next) => {
 })
 
 
-app.get('/admin', (req, res, next){
+app.get('/admin', (req, res, next) => {
     
-res.sendFile(path.join(__dirname, "/public/admin.html"))
+    res.render('admin')
+})
 
+
+app.post('/admin', (req, res, next) => {
+    
 })
