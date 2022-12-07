@@ -3,9 +3,10 @@ const { appendFile } = require("fs")
 const mongoose = require("mongoose")
 const engine = require("ejs-mate")
 const path = require("path")
+var methodOverride = require('method-override')
 
 const app = express();
-app
+mongoose.connect('mongodb://127.0.0.1:27017/').then(()=> console.log("connection opened with mongoose")).catch((err)=> console.log("cannot access mongodb for some reason"))
 app.engine('ejs', engine);
  
 app.set('views', path.join(__dirname, 'views'));
@@ -13,8 +14,13 @@ app.set('view engine', 'ejs')
 
 app.use(express.static('public'))
 
+
+app.use(methodOverride('_method'))
+
+
+
 app.listen(3000, () => {
-    console.log("the port is opened on 3000")
+    console.log("the connection is opened on port 3000")
 })
 
 
@@ -25,10 +31,21 @@ app.get('/', (req, res, next) => {
 
 app.get('/admin', (req, res, next) => {
     
-    res.render('admin')
+    var name = { name : ' gratus', namee2: '' }
+    console.log(name.name)
+    res.render('admin', {name})
 })
 
 
 app.post('/admin', (req, res, next) => {
     
 })
+
+app.put('/resource', (req, res, next) => {
+    console.log("the method over ride is working")
+    res.send("this is working")
+})
+
+
+////////
+
