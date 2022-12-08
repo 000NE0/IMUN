@@ -764,6 +764,7 @@ section {
   display: inline-block;
   border-bottom: 4px solid #ebebed;
   transition: 0.3s;
+  margin-top: 5%;
 }
 
 .support-img {
