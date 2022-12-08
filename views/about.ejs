@@ -30,13 +30,6 @@
 
     <!-- Template Main CSS File -->
     <link href="css/main.css" rel="stylesheet" />
-
-    <!-- =======================================================
-  * Template Name: UpConstruction - v1.2.1
-  * Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
   </head>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
@@ -54,56 +47,7 @@
 
   <body>
     <!-- ======= Header ======= -->
-    <header id="header" class="header d-flex align-items-center">
-      <div
-        class="container-fluid container-xl d-flex align-items-center justify-content-between"
-      >
-        <a href="index.html" class="logo d-flex align-items-center">
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-          <!-- <img src="img/logo.png" alt=""> -->
-          <img src="img/munlogo.png" alt=""><h1>SNS international IMUN<span>.</span></h1>
-        </a>
-
-        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-        <nav id="navbar" class="navbar">
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="about.html" class="active">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li class="dropdown">
-              <a href="#"
-                ><span>Dropdown</span>
-                <i class="bi bi-chevron-down dropdown-indicator"></i
-              ></a>
-              <ul>
-                <li><a href="#">Dropdown 1</a></li>
-                <li class="dropdown">
-                  <a href="#"
-                    ><span>Deep Dropdown</span>
-                    <i class="bi bi-chevron-down dropdown-indicator"></i
-                  ></a>
-                  <ul>
-                    <li><a href="#">Deep Dropdown 1</a></li>
-                    <li><a href="#">Deep Dropdown 2</a></li>
-                    <li><a href="#">Deep Dropdown 3</a></li>
-                    <li><a href="#">Deep Dropdown 4</a></li>
-                    <li><a href="#">Deep Dropdown 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Dropdown 2</a></li>
-                <li><a href="#">Dropdown 3</a></li>
-                <li><a href="#">Dropdown 4</a></li>
-              </ul>
-            </li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-        <!-- .navbar -->
-      </div>
-    </header>
+    <%- include('../partials/navbar.ejs')%>
     <!-- End Header -->
 
     <main id="main">
@@ -213,7 +157,9 @@
                     data-purecounter-end="20"
                     data-purecounter-duration="1"
                     class="purecounter"
-                  > <span>+</span></span>
+                  >
+                    <span>+</span></span
+                  >
                   <p>Events conducted</p>
                 </div>
               </div>
@@ -270,7 +216,17 @@
             <div class="col-lg-5 d-flex flex-column justify-content-center">
               <h3>Supporting institutions</h3>
               <p>
-                True to the spirit of the United Nations, IMUN strives to foster a constructive forum for open dialogue on complex global issues, including international peace and security and economic and social progress. IMUN stresses the in-depth examination and resolution of pressing issues by emphasizing the process over results. However, with great powers comes great responsibilities. There are limitations to negotiations especially when international diplomacies and great interests are involved. We hope through IMUN, students learn the importance of balancing national interests with the needs of the international community.
+                True to the spirit of the United Nations, IMUN strives to foster
+                a constructive forum for open dialogue on complex global issues,
+                including international peace and security and economic and
+                social progress. IMUN stresses the in-depth examination and
+                resolution of pressing issues by emphasizing the process over
+                results. However, with great powers comes great
+                responsibilities. There are limitations to negotiations
+                especially when international diplomacies and great interests
+                are involved. We hope through IMUN, students learn the
+                importance of balancing national interests with the needs of the
+                international community.
               </p>
 
               <div
@@ -347,9 +303,7 @@
         <div class="container" data-aos="fade-up">
           <div class="row justify-content-around gy-4">
             <div class="col-lg-5 d-flex flex-column justify-content-center">
-              <h3>
-                Our Methodology
-              </h3>
+              <h3>Our Methodology</h3>
               <p>
                 Maxime quia dolorum alias perspiciatis. Earum voluptatem sint at
                 non. Ducimus maxime minima iste magni sit praesentium assumenda
@@ -451,7 +405,12 @@
               data-aos-delay="100"
             >
               <div class="member-img">
-                <img src="img/chairman.png" class="img-fluid" alt="" style="width: 120%;" />
+                <img
+                  src="img/chairman.png"
+                  class="img-fluid"
+                  alt=""
+                  style="width: 120%"
+                />
                 <div class="social">
                   <a href="#"><i class="bi bi-twitter"></i></a>
                   <a href="#"><i class="bi bi-facebook"></i></a>
@@ -476,7 +435,12 @@
               data-aos-delay="200"
             >
               <div class="member-img">
-                <img src="img/td.jpg" class="img-fluid" alt="" style="width: 120%;" />
+                <img
+                  src="img/td.jpg"
+                  class="img-fluid"
+                  alt=""
+                  style="width: 120%"
+                />
                 <div class="social">
                   <a href="#"><i class="bi bi-twitter"></i></a>
                   <a href="#"><i class="bi bi-facebook"></i></a>
@@ -501,7 +465,12 @@
               data-aos-delay="300"
             >
               <div class="member-img">
-                <img src="img/hod.jpg" class="img-fluid" alt="" style="width: 100%;" />
+                <img
+                  src="img/hod.jpg"
+                  class="img-fluid"
+                  alt=""
+                  style="width: 100%"
+                />
                 <div class="social">
                   <a href="#"><i class="bi bi-twitter"></i></a>
                   <a href="#"><i class="bi bi-facebook"></i></a>
@@ -511,9 +480,10 @@
               </div>
               <div class="member-info text-center">
                 <h4>DR.K.Sangeetha</h4>
-                <span>HOD,
-                  computer Science and Engineering,
-                   SNS College of Technology</span>
+                <span
+                  >HOD, computer Science and Engineering, SNS College of
+                  Technology</span
+                >
                 <p>
                   Illum minima ea autem doloremque ipsum quidem quas aspernatur
                   modi ut praesentium vel tque sed facilis at qui
@@ -563,7 +533,10 @@
               </div>
               <div class="member-info text-center">
                 <h4>K.Ahalyaa</h4>
-                <span>Executive Seceratry General , IMUN, SNS College of Technology</span>
+                <span
+                  >Executive Seceratry General , IMUN, SNS College of
+                  Technology</span
+                >
                 <p>
                   Qui consequuntur quos accusamus magnam quo est molestiae eius
                   laboriosam sunt doloribus quia impedit laborum velit
@@ -588,7 +561,10 @@
               </div>
               <div class="member-info text-center">
                 <h4>S.Aswant</h4>
-                <span>Executive Deputy Seceratry General , IMUN, SNS College of Technology</span>
+                <span
+                  >Executive Deputy Seceratry General , IMUN, SNS College of
+                  Technology</span
+                >
                 <p>
                   Sint sint eveniet explicabo amet consequatur nesciunt error
                   enim rerum earum et omnis fugit eligendi cupiditate vel
@@ -600,7 +576,6 @@
         </div>
       </section>
       <!-- End Our Team Section -->
-
 
       <!-- End Testimonials Section -->
     </main>

@@ -43,9 +43,7 @@ app.put('/resource', (req, res, next) => {
   res.send('this is working');
 });
 
-
 app.get('/about', (req, res, next) => {
-    res.render('about')
-
-})
+  res.render('about');
+});
 ////////
