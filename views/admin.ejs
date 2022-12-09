@@ -13,12 +13,16 @@
     />
   </head>
   <body>
-    <div class="card shadow-lg" style="padding: 10px; margin-top: 20px">
-      <form method="POST" action="/new">
+    <div class="card shadow-lg d-flex flex-column" style="padding: 10px; margin-top: 20px">
+      <form class="card shadow-lg d-flex flex-column" method="POST" action="/new">
         <label for="name">Name</label>
         <input placeholder="enter the student's name" type="text" id="name" />
         <label for="about">description</label>
         <textarea name="about" id="about" cols="30" rows="10"></textarea>
+        <label for="id">Enter the Unique identification number</label>
+        <input type="number" name="uid" id="uid">
+        <label for="image">upload an image</label>
+        <input type="file" name="image" id="image">
       </form>
     </div>
   </body>

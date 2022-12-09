@@ -43,3 +43,9 @@ app.get('/about', (req, res, next) => {
   res.render('about');
 });
 
+
+app.post('/about', (req, res, next) => {
+  
+
+  
+})
