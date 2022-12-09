@@ -22,8 +22,8 @@ app.use(express.static('public'));
 
 app.use(methodOverride('_method'));
 
-app.listen(3000, () => {
-  console.log('the port is opened on 3000');
+app.listen(5000, () => {
+  console.log('the port is opened on 5000');
 });
 
 app.get('/', (req, res, next) => {
@@ -43,9 +43,7 @@ app.put('/resource', (req, res, next) => {
   res.send('this is working');
 });
 
-
 app.get('/about', (req, res, next) => {
-    res.render('about')
-
-})
+  res.render('about');
+});
 ////////
