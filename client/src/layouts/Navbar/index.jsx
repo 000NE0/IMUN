@@ -25,7 +25,7 @@ function Navbar() {
             <li>
               <a href='services.html'>Services</a>
             </li>
-            <li>
+            {/* <li>
               <a href='projects.html'>Projects</a>
             </li>
             <li>
@@ -76,7 +76,7 @@ function Navbar() {
             </li>
             <li>
               <a href='contact.html'>Contact</a>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </div>

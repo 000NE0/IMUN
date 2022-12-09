@@ -70,7 +70,7 @@ function Footer() {
               </ul>
             </div>
 
-            <div className='col-lg-2 col-md-3 footer-links'>
+            {/* <div className='col-lg-2 col-md-3 footer-links'>
               <h4>Our Services</h4>
               <ul>
                 <li>
@@ -89,9 +89,9 @@ function Footer() {
                   <a href='#'>Graphic Design</a>
                 </li>
               </ul>
-            </div>
+            </div> */}
 
-            <div className='col-lg-2 col-md-3 footer-links'>
+            {/* <div className='col-lg-2 col-md-3 footer-links'>
               <h4>Hic solutasetp</h4>
               <ul>
                 <li>
@@ -131,7 +131,7 @@ function Footer() {
                   <a href='#'>Flexo</a>
                 </li>
               </ul>
-            </div>
+            </div> */}
 
             <div className='footer-legal text-center position-relative'>
               <div className='container'>

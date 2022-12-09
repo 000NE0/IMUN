@@ -179,7 +179,7 @@ function Home() {
             </div>
           </div>
         </section>
-        =
+
         <section id='constructions' className='constructions'>
           <div className='container' data-aos='fade-up'>
             <div className='section-header'>
