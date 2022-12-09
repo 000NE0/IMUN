@@ -38,12 +38,8 @@ app.get('/admin', (req, res, next) => {
 
 app.post('/admin', (req, res, next) => {});
 
-app.put('/resource', (req, res, next) => {
-  console.log('the method over ride is working');
-  res.send('this is working');
-});
 
 app.get('/about', (req, res, next) => {
   res.render('about');
 });
-////////
+
