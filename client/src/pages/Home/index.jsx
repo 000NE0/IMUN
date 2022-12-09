@@ -7,7 +7,15 @@ import Card from 'components/Card';
 import Layout from 'layouts';
 import SNSCTLogo from 'assets/sns-logo/snsct.png';
 import AchievementsCard from 'components/AchievementsCard';
-
+import SNSCELogo from 'assets/sns-logo/snsce.png';
+import SNSACLogo from 'assets/sns-logo/academy.jpg';
+import SNSartLogo from 'assets/sns-logo/arts.jpg';
+import SNSeduLogo from 'assets/sns-logo/SNSCedu.png';
+import SNSallLogo from 'assets/sns-logo/allied.png';
+import SNSnurLogo from 'assets/sns-logo/nursing.jpg';
+import SNSpharmaLogo from 'assets/sns-logo/pharmacy.png';
+import SNSphysioLogo from 'assets/sns-logo/physiotheraphy.png';
+import SNSspiLogo from 'assets/sns-logo/spine.jpg';
 const ACHIEVEMENTS = [
   {
     title: 'Expedita voluptas ut ut nesciunt',
@@ -40,6 +48,70 @@ const SUPPORTERS = [
     description:
       'Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque noet debitis iure Corrupti recusandae ducimus enim',
     logo: SNSCTLogo,
+    link: 'www.google.com',
+  },
+  {
+    title: 'SNSCE',
+    description:
+      'Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque noet debitis iure Corrupti recusandae ducimus enim',
+    logo: SNSCELogo,
+    link: 'www.google.com',
+  },
+  {
+    title: 'SNS Academy',
+    description:
+      'Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque noet debitis iure Corrupti recusandae ducimus enim',
+    logo: SNSACLogo,
+    link: 'www.google.com',
+  },
+  {
+    title: 'SNS Arts',
+    description:
+      'Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque noet debitis iure Corrupti recusandae ducimus enim',
+    logo: SNSartLogo,
+    link: 'www.google.com',
+  },
+  {
+    title: 'SNS Education',
+    description:
+      'Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque noet debitis iure Corrupti recusandae ducimus enim',
+    logo: SNSeduLogo,
+    link: 'www.google.com',
+  },
+  {
+    title: 'SNS Allied Science',
+    description:
+      'Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque noet debitis iure Corrupti recusandae ducimus enim',
+    logo: SNSallLogo,
+    link: 'www.google.com',
+  },
+
+  {
+    title: 'SNS Nursing',
+    description:
+      'Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque noet debitis iure Corrupti recusandae ducimus enim',
+    logo: SNSnurLogo,
+    link: 'www.google.com',
+  },
+  {
+    title: 'SNS Pharmacy',
+    description:
+      'Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque noet debitis iure Corrupti recusandae ducimus enim',
+    logo: SNSpharmaLogo,
+    link: 'www.google.com',
+  },
+  {
+    title: 'SNS Physiotherapy',
+    description:
+      'Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque noet debitis iure Corrupti recusandae ducimus enim',
+    logo: SNSphysioLogo,
+    link: 'www.google.com',
+  },
+  {
+    title: 'SNS Spine',
+    description:
+      'Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque noet debitis iure Corrupti recusandae ducimus enim',
+    logo: SNSspiLogo,
     link: 'www.google.com',
   },
 ];
