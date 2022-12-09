@@ -14,7 +14,7 @@
   </head>
   <body>
     <div class="card shadow-lg d-flex flex-column" style="padding: 10px; margin-top: 20px">
-      <form class="card shadow-lg d-flex flex-column" method="POST" action="/new">
+      <form class="card shadow-lg d-flex flex-column" method="POST" action="/admin?_method=POST">
         <label for="name">Name</label>
         <input placeholder="enter the student's name" type="text" id="name" />
         <label for="about">description</label>
@@ -23,6 +23,7 @@
         <input type="number" name="uid" id="uid">
         <label for="image">upload an image</label>
         <input type="file" name="image" id="image">
+        <button type="submit">submit</button>
       </form>
     </div>
   </body>
