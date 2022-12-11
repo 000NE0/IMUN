@@ -2,7 +2,7 @@ import React from 'react';
 
 function QuoteForm() {
   return (
-    <div className='col-lg-5' data-aos='fade'>
+    <div className='col-lg-5' data-aos='fade-out'>
       <form action='forms/quote.php' method='post' className='php-email-form'>
         <h3>Get a quote</h3>
         <p>

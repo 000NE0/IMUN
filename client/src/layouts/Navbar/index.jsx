@@ -1,6 +1,21 @@
 import React from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 function Navbar() {
+  const NAVITEM = [
+    {
+      title: 'Home',
+      to: '/',
+    },
+    {
+      title: 'About',
+      to: '/about',
+    },
+  ];
+
+  const navigate = useNavigate();
+  const location = useLocation();
+
   return (
     <header id='header' className='header d-flex align-items-center'>
       <div className='container-fluid container-xl d-flex align-items-center justify-content-between'>
@@ -14,17 +29,23 @@ function Navbar() {
         <i className='mobile-nav-toggle mobile-nav-hide d-none bi bi-x'></i>
         <nav id='navbar' className='navbar'>
           <ul>
-            <li>
-              <a href='/' className='active'>
-                Home
-              </a>
-            </li>
-            <li>
-              <a href='about'>About</a>
-            </li>
-            <li>
-              <a href='services.html'>Services</a>
-            </li>
+            {NAVITEM.map((item, index) => {
+              const { title, to } = item;
+
+              return (
+                <li key={index}>
+                  <a
+                    onClick={() => {
+                      navigate(to);
+                    }}
+                    className={location.pathname === to ? 'active' : 'navItem'}
+                  >
+                    {title}
+                  </a>
+                </li>
+              );
+            })}
+
             {/* <li>
               <a href='projects.html'>Projects</a>
             </li>

@@ -117,8 +117,6 @@ const SUPPORTERS = [
 ];
 
 function Home() {
-  AOS.init();
-
   return (
     <Layout>
       <section id='hero' className='hero'>
@@ -139,7 +137,7 @@ function Home() {
                 <a
                   data-aos='fade-up'
                   data-aos-delay='200'
-                  href='#get-started'
+                  href='#services'
                   className='btn-get-started'
                 >
                   Get Started

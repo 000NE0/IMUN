@@ -298,6 +298,7 @@ section {
   }
 
   .navbar a,
+  .navItem,
   .navbar a:focus {
     display: flex;
     align-items: center;
